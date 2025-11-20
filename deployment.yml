@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hello-app
+  namespace: default
   labels:
     app: hello-app
 spec:
@@ -15,16 +16,16 @@ spec:
         app: hello-app
     spec:
       containers:
-      - name: hello-app
-        image: ahmedlebshten/helloapp:latest
-        ports:
-        - containerPort: 80
-
+        - name: hello-app
+          image: ahmedlebshten/helloapp:latest
+          ports:
+            - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
 metadata:
   name: hello-app-svc
+  namespace: default
 spec:
   type: LoadBalancer
   selector:
