@@ -1,12 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-<<<<<<< HEAD
   name: url-shortener
-=======
-  name: hello-app
-  namespace: default
->>>>>>> a9bdbabf75d94fb0c743638552490df0fd945612
   labels:
     app: url-shortener
 spec:
@@ -20,28 +15,16 @@ spec:
         app: url-shortener
     spec:
       containers:
-<<<<<<< HEAD
       - name: url-shortener
         image: ahmedlebshten/url-shortener:latest
         ports:
         - containerPort: 80
 
-=======
-        - name: hello-app
-          image: ahmedlebshten/helloapp:34
-          ports:
-            - containerPort: 80
->>>>>>> a9bdbabf75d94fb0c743638552490df0fd945612
 ---
 apiVersion: v1
 kind: Service
 metadata:
-<<<<<<< HEAD
   name: url-shortener-svc
-=======
-  name: hello-app-svc
-  namespace: default
->>>>>>> a9bdbabf75d94fb0c743638552490df0fd945612
 spec:
   type: LoadBalancer
   selector:
