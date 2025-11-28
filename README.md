@@ -1,4 +1,4 @@
-HelloApp – CI/CD on EKS using Jenkins & ArgoCD (Short README)
+URL Shortener Webservice – CI/CD on EKS using Jenkins & ArgoCD (Short README)
 
 Overview
 
