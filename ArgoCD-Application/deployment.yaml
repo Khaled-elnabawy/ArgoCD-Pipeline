@@ -16,7 +16,11 @@ spec:
     spec:
       containers:
       - name: url-shortener
+<<<<<<< HEAD
         image: ahmedlebshten/url-shortener:45
+=======
+        image: ahmedlebshten/url-shortener:PLACEHOLDER_TAG
+>>>>>>> a92d90b (edit image tag)
         ports:
         - containerPort: 3000
 
