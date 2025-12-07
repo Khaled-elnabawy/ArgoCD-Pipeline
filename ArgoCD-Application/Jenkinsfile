@@ -25,7 +25,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/Ahmedlebshten/ArgoCD-Pipeline.git
+    repoURL: https://github.com/Khaled-elnabawy/ArgoCD-Pipeline.git
     targetRevision: HEAD
     path: ArgoCD-Application
   destination:
